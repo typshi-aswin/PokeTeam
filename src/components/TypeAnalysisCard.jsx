@@ -13,7 +13,7 @@ function TypeAnalysisCard() {
   
 
   team.forEach(pokemon => {
-    console.log("Types:", pokemon.types, Array.isArray(pokemon.types));
+    
 
     const typesArray = typeof pokemon.types === "string"
     ? pokemon.types.split(',').map(t => t.trim())

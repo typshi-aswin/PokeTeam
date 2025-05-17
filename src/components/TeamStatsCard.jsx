@@ -23,7 +23,6 @@ function TeamStatsCard() {
 
   if (team.length > 0) {
     team.forEach(pokemon => {
-      console.log("Full stats array:", pokemon.stats);
       pokemon.stats.forEach(stat => {
         const value = stat.base_stat;
          
