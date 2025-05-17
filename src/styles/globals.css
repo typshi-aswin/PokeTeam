@@ -11,6 +11,8 @@
   --background-color: #f0f5f5;
   --background-image: linear-gradient(304deg, rgba(240, 245, 245, 1) 0%, rgba(131, 190, 199, 1) 100%);
   --border-color: rgb(38, 62, 70);
+  --progress-color:white;
+  --progressbar-color:rgb(89, 117, 127);
   }
 [data-theme="Dark"] {
       
@@ -21,6 +23,8 @@
   --background-color: #121212;
   --background-image: none;
   --border-color: rgb(73, 73, 73);
+  --progress-color:rgb(89, 117, 127);
+  --progressbar-color:white;
 }
 
 body,html {
