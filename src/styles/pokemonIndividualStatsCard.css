@@ -1,0 +1,89 @@
+.individual-stats-card {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.2rem;;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  width: 22.5rem;
+  height:17rem;
+  margin: 1rem 0.1rem;
+  border:0.1px solid var(--heading-color);
+}
+
+.individual-stats-card h2 {
+  font-size: 1.2rem;
+  color: var(--heading-color);
+}
+
+/* Image + arrows */
+.image-container {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.image-container img {
+  height: 80px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.arrow {
+  background-color: var(--button-color);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  border-radius: 20%;
+  transition: background-color 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: var(--subheading-color);
+}
+
+/* Stats section */
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-row span {
+  width: 80px;
+  font-weight: 500;
+  font-size: 0.5rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 5px;
+  background-color: var(--subheading-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--background-color);
+  transition: width 0.3s ease;
+}
+
+@media (max-width:1220px) {
+  .individual-stats-card {
+    width:90%;
+    margin:-0.2rem;
+  }
+}

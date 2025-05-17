@@ -1,0 +1,100 @@
+.selected-team-card {
+    width:50rem;
+    height:17rem;
+    background-color: transparent;
+    border:0.1px solid var(--heading-color);
+    border-radius: 5px;
+    color:var(--heading-color);
+    padding: 0.5rem 2rem;
+    margin: 1rem 2rem;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-container .backtohome {
+    background-color: var(--button-color);
+    border-radius: 5px;
+    border:none;
+    color:var(--background-color);
+    font-size:0.7rem;
+    height: 1.5rem;
+    width:6rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease
+}
+
+.backtohome:hover {
+  transform: translateY(-2px) scale(1.03);
+  
+}
+.heading-container h2 {
+    font-size:1.2rem;
+}
+
+.team-pokemon-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    padding: 1rem 0rem;
+}
+.team-pokemon-card {
+    width:10em;
+    height:10rem;
+    background-color: var(--background-image);
+    border:0.1px solid var(--heading-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0.8rem 0.5rem;
+    justify-content: space-between;
+    font-size:0.7rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 90%;
+    height: 4rem;
+    background-color: rgba(22, 22, 22, 0.3);
+    border-radius: 3px;
+    
+}
+
+.img-container img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.remove-button {
+    background-color: var(--button-color);
+    color: var(--background-color);
+    border: none;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    height:1.5rem;
+}
+
+@media (max-width:1220px) {
+    .selected-team-card{
+        width:90%;
+        height:auto;
+    }
+    .team-pokemon-list {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;;
+    
+}
+    .team-pokemon-card {
+        width:8em;
+        height: 8rem;
+    }
+
+}
