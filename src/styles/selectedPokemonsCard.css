@@ -2,7 +2,7 @@
     width:50rem;
     height:17rem;
     background-color: transparent;
-    border:0.1px solid var(--heading-color);
+    border:0.1px solid var(--border-color);
     border-radius: 5px;
     color:var(--heading-color);
     padding: 0.5rem 2rem;
@@ -44,7 +44,7 @@
     width:10em;
     height:10rem;
     background-color: var(--background-image);
-    border:0.1px solid var(--heading-color);
+    border:0.1px solid var(--border-color);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,7 @@
 }
     .team-pokemon-card {
         width:8em;
-        height: 8rem;
+        height: auto;
     }
 
 }

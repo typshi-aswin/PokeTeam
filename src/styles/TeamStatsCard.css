@@ -4,7 +4,7 @@
 }
 .team-stats-card {
     background-color: transparent;
-    border:0.1px solid var(--heading-color);
+    border:0.1px solid var(--border-color);
     border-radius: 5px;
     padding: 0.5rem 2rem;
     margin: 0 2rem;
