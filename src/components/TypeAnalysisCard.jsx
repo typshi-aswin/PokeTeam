@@ -1,6 +1,6 @@
 import React from 'react';
 import usePokemonTeamStore from '../store/usePokemonTeamStore';
-import typeEffectiveness from "../data/typeEffectiveness";// This will be a type chart object
+import typeEffectiveness from "../data/typeEffectiveness"; // this is where the data of weaknesses and resistances of different types are stored.
 import '../styles/typeAnalysisCard.css';
 
 function TypeAnalysisCard() {
