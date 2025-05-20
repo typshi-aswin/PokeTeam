@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import logo from '/logo.png'; // adjust the path if your logo is elsewhere
+import logo from '/logo.png'; 
 import '../styles/floatingButton.css'; 
 function FloatingButton() {
    const navigate = useNavigate();
