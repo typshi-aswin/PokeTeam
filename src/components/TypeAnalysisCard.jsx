@@ -3,6 +3,14 @@ import usePokemonTeamStore from '../store/usePokemonTeamStore';
 import typeEffectiveness from "../data/typeEffectiveness"; // this is where the data of weaknesses and resistances of different types are stored.
 import '../styles/typeAnalysisCard.css';
 
+/**
+TYPE ANALYSIS:
+==> as we know, each pokemon is not limited to one type, there might exist different types for each pokemon 
+==> so each type as its own weakness and resistance types, which i have provided in typeEffectiveness.js
+==> so top weaknesses and resistances are showin seperately in this card. 
+==> for example, if fire is resisted by 3 pokemons in the selection, it'll show fire 3*
+**/
+
 function TypeAnalysisCard() {
   const team = usePokemonTeamStore((state) => state.team);
 
