@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import usePokemonTeamStore from '../store/usePokemonTeamStore';
-import { getPokemonDetails } from '../api/pokeapi'; // 👈 make sure this import is correct
+import { getPokemonDetails } from '../api/pokeapi'; 
 import '../styles/pokemonCard.css';
 
 function PokemonCard({ name, image, types, stats, id }) {
@@ -9,7 +9,7 @@ function PokemonCard({ name, image, types, stats, id }) {
 
   const handleAdd = async () => {
     try {
-      // 👇 Fetch full details to ensure all 6 stats are present
+      // here i fetch full details to ensure all 6 stats are present
       const fullDetails = await getPokemonDetails(`https://pokeapi.co/api/v2/pokemon/${id}`, true);
 
       const result = addToTeam({
