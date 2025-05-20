@@ -5,7 +5,7 @@ import PokemonIndividualStatsCard from '../components/PokemonIndividualStatsCard
 import '../styles/globals.css';
 import TypeAnalysisCard from '../components/TypeAnalysisCard.jsx';
 
-// import other cards here...
+
 
 function TeamPage() {
   return (
