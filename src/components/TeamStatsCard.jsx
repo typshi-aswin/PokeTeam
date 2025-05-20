@@ -6,6 +6,8 @@ import '../styles/TeamStatsCard.css';
 /** HOW I CALCULATED TEAM STATS:
 => I got all the 6 stats. Based on that created fancy names for corresponding team stat.
 => for example, adding the hps together creates the HP Durability of the team.
+=> this card makes use of radar chart from recharts, thought it is a visually appealing way to show stats, since im already providing a 
+individual pokemon card stats, i dont need two cards to look almost the same.
 **/
 
 
