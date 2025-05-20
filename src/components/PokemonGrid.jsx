@@ -7,24 +7,24 @@ import '../styles/pokemonGrid.css';
 function PokemonGrid({ search }) {
 
 
-  const [initialPokemon, setInitialPokemon] = useState([]);  // To hold the first 30 Pokémon
-  const [allPokemonList, setAllPokemonList] = useState([]);  // Full Pokémon list for search
-  const [filteredPokemon, setFilteredPokemon] = useState([]); // Search result Pokémon
+  const [initialPokemon, setInitialPokemon] = useState([]);  // to hold the first 30 pokemon
+  const [allPokemonList, setAllPokemonList] = useState([]);  // full pokemon list for search
+  const [filteredPokemon, setFilteredPokemon] = useState([]); // search result pokemon
 
 
   useEffect(() => {
-    // Fetch initial 30 Pokémon only for display
+    // initial fetch 30 Pokemon only for display
     const loadInitialPokemons = async () => {
-      const initialPokemons = await getPokemonList(); // This fetches all Pokémon by default
+      const initialPokemons = await getPokemonList(); //this fetch all pokemon by default
       const initialDetails = await Promise.all(
         initialPokemons.slice(0, 30).map(pokemon => getPokemonDetails(pokemon.url, false))
       );
       setInitialPokemon(initialDetails);
     };
 
-    // Fetch full Pokémon list (for search functionality)
+    // this is for search functionality fetch all pokemon
     const loadAllPokemons = async () => {
-      const allPokemons = await getPokemonList();  // Same function for full list
+      const allPokemons = await getPokemonList();  
       setAllPokemonList(allPokemons);
     };
 
@@ -33,10 +33,10 @@ function PokemonGrid({ search }) {
   }, []);
 
   useEffect(() => {
-    // Filter Pokémon based on search term
+    //pokemon filtering
     const filterPokemons = async () => {
       if (!search) {
-        // If no search term, show only the first 30 Pokémon
+        // iff no search term, show only the first 30 Pokemon
         setFilteredPokemon([]);
         return;
       }
@@ -54,7 +54,7 @@ function PokemonGrid({ search }) {
     filterPokemons();
   }, [search, allPokemonList]);
 
-  // If search term exists, show filtered results, otherwise show the first 30 Pokémon
+  // if search term exists, show filtered results, otherwise show the first 30 Pokemon
   const pokemonToDisplay = search ? filteredPokemon : initialPokemon;
 
   return (
