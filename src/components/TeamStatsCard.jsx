@@ -3,7 +3,10 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Tooltip 
 import usePokemonTeamStore from '../store/usePokemonTeamStore';
 import '../styles/TeamStatsCard.css';
 
-
+/** HOW I CALCULATED TEAM STATS:
+=> I got all the 6 stats. Based on that created fancy names for corresponding team stat.
+=> for example, adding the hps together creates the HP Durability of the team.
+**/
 
 
 function TeamStatsCard() {
@@ -11,7 +14,7 @@ function TeamStatsCard() {
  
   const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--heading-color');
   const strokeColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
-  // Fancy calculations based on Pokémon stats
+ 
   const stats = {
     hpDurability: 0,
     physicalOffense: 0,
@@ -52,7 +55,7 @@ function TeamStatsCard() {
       });
     });
 
-    // Normalize by team size
+    // here i normalize by team size
     Object.keys(stats).forEach(key => {
       stats[key] = Math.floor(stats[key] / team.length);
     });
