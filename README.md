@@ -6,6 +6,14 @@ A sleek Pokémon Team Builder web app built using React, Vite, and Zustand. It l
 
 https://poketeam0.pages.dev
 
+
+
+
+
+https://github.com/user-attachments/assets/de62c64f-b3ca-4918-9cea-5cfbc76c20c7
+
+
+
 ## ✨ Features
 
 > 🔍 Live search with instant suggestions
