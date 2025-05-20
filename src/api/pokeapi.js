@@ -3,10 +3,10 @@ import axios from 'axios';
 
 export const getPokemonList = async () => {
   const res = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=10000');
-  return res.data.results; // Array of { name, url }
+  return res.data.results; // for my reference, this is in the format of array of { name, url }
 };
 
-// Accept an optional `fullStats` flag
+// full stats flag because im not showing all the stats in the intro pokemon grid cards.
 export const getPokemonDetails = async (url, fullStats = false) => {
   const res = await axios.get(url);
   const data = res.data;
